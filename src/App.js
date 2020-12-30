@@ -22,3 +22,4 @@ export default App;
 
 //https://newsapi.org/
 //https://github.com/saebomp/news_app/blob/master/src/service/api.js
+//https://www.newline.co/@amandeepmittal/how-to-build-react-native-apps-with-graphql-and-apollo--d74eb12e

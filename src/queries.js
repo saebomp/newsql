@@ -13,6 +13,7 @@ export const Headlines = gql`
         publishedAt
         url
         urlToImage
+        description
         source @type(name: "SourcePayload") {
           name
         }
