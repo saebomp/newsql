@@ -5,7 +5,7 @@ export const Headlines = gql`
     headlines
       @rest(
         type: "HeadlinesPayload"
-        path: "top-headlines?country=us&category=technology"
+        path: "top-headlines?country=ca"
       ) {
       totalResults
       articles @type(name: "ArticlePayload") {
@@ -14,6 +14,7 @@ export const Headlines = gql`
         url
         urlToImage
         description
+        content
         source @type(name: "SourcePayload") {
           name
         }
