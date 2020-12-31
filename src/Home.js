@@ -42,7 +42,7 @@ const Home = () => {
           const {title, description, publishedAt, url, urlToImage, content, name} = item
         
         return (
-          <Col span={8}>
+          <Col xs={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }}>
           <Card
           hoverable
           style={{ width: '100%' }}
