@@ -4,6 +4,7 @@ import {ApolloProvider} from '@apollo/client'
 import client from './apolloClient'
 import Home from './Home'
 import Detail from './Detail'
+import  "./App.css"
 
 const App = () => (
     <ApolloProvider client={client}>

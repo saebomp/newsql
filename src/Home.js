@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { useQuery } from '@apollo/client'
 import {Headlines} from './queries'
 import client from './apolloClient'
-import { Card } from 'antd';
+import { Card, Row, Col } from 'antd'
+import Header from './Header'
+
 
 
 const Home = () => {
@@ -32,21 +34,33 @@ const Home = () => {
 
   console.log('data', data)
   return (
-    // <div>{data.headlines.articles[0].title}</div>
-    <span>{articles.map(item => {
-      const {title, description, publishedAt, url, urlToImage, content, name} = item
-      
-      return (
-      <Card
-      hoverable
-      style={{ width: '100%' }}
-      cover={<img alt="example" src={urlToImage} />}
-    >
-      <Meta title={title}
-      description={description} />
-    </Card>
-     )
-    })}</span>
+    <>
+    <Header />
+    <div>
+    <Row gutter={[16, 16]}>
+        {articles.map(item => {
+          const {title, description, publishedAt, url, urlToImage, content, name} = item
+        
+        return (
+          <Col span={8}>
+          <Card
+          hoverable
+          style={{ width: '100%' }}
+        >
+        
+          <img src={urlToImage} className="thumbnail"/>
+          <Meta title={title}
+          description={description} 
+          />
+          <p>{publishedAt.substring(0, 10)}</p> 
+          {/* <p>{url}</p>  */}
+        </Card>
+      </Col>
+        )
+        })}
+    </Row>
+    </div>
+    </>
   )
 
 }

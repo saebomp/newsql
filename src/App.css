@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.css'; 
+
+* {
+  padding:0;
+  margin:0;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+  'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji';
+}
+
+body {
+  padding:20px 30px
+}
+
+.ant-typography {
+
+}
+
+.ant-card {
+  margin-bottom: 20px !important;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
