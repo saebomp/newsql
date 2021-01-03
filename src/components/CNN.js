@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useQuery } from '@apollo/client'
-import {HeadlinesBbc} from '../queries'
+import {HeadlinesCnn} from '../queries'
 import client from '../apolloClient'
-import { Card, Row, Col } from 'antd'
+import { Card, Row, Col} from 'antd'
 
 const getStyles = () => ({
   publishedAt : {
@@ -11,15 +11,15 @@ const getStyles = () => ({
 })
 
 
-const BBC = () => {
+const CNN = () => {
   const { Meta } = Card;
   const styles = getStyles()
   const [articles, setArticles] = useState([])
 
-  const requestHeadlinesofBbc = () => {
+  const requestHeadlinesofCnn = () => {
     client
     .query({
-      query: HeadlinesBbc
+      query: HeadlinesCnn
     })
     .then(response => {
       setArticles(response.data.headlines.articles)
@@ -30,10 +30,10 @@ const BBC = () => {
   }
 
   useEffect(() => {
-    requestHeadlinesofBbc()
+    requestHeadlinesofCnn()
   }, [])
 
-  const {loading, error, data} = useQuery(HeadlinesBbc)
+  const {loading, error, data} = useQuery(HeadlinesCnn)
   if (loading) return 'Loading...'
   if (error) return `Error! ${error.message}`
 
@@ -43,7 +43,7 @@ const BBC = () => {
   return (
   <div>
     <Row gutter={[16, 16]}>
-      {articles.map((item) => {
+      {articles.map(item => {
         const {title, description, publishedAt, url, urlToImage} = item
       
       return (
@@ -70,4 +70,4 @@ const BBC = () => {
   )
 }
 
-export default BBC
+export default CNN

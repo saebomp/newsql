@@ -2,28 +2,30 @@ import React from 'react'
 
 import Header from './Header'
 import { Tabs } from 'antd';
+import CBC from './CBC'
 import BBC from './BBC'
+import CNN from './CNN'
 
 
 const Home = () => {
   const { TabPane } = Tabs;
   
   function callback(key) {
-    console.log(key);
+    // console.log(key);
   }
 
   return (
     <>
     <Header />
     <Tabs onChange={callback} type="card">
-      <TabPane tab="BBC" key="1">
+      <TabPane tab="CBC" key="1">
+        <CBC />
+      </TabPane>
+      <TabPane tab="BBC" key="2">
         <BBC />
       </TabPane>
-      <TabPane tab="Tab 2" key="2">
-        Content of Tab Pane 2
-      </TabPane>
-      <TabPane tab="Tab 3" key="3">
-        Content of Tab Pane 3
+      <TabPane tab="CNN" key="3">
+        <CNN />
       </TabPane>
     </Tabs>
     </>

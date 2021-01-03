@@ -12,10 +12,6 @@ body {
   padding:20px 30px
 }
 
-.ant-typography {
-
-}
-
 .ant-card {
   margin-bottom: 20px !important;
 }
@@ -24,3 +20,11 @@ body {
   width: 100%;
 }
 
+.newslink {
+  display: block;
+}
+
+.ant-card-meta-description {
+  line-height: 1.3em;
+  height:3.9em
+}
