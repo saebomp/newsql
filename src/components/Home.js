@@ -18,13 +18,13 @@ const Home = () => {
     <>
     <Header />
     <Tabs onChange={callback} type="card">
-      <TabPane tab="CBC" key="1">
+      <TabPane tab="CBC" key="1" forceRender>
         <CBC />
       </TabPane>
-      <TabPane tab="BBC" key="2">
+      <TabPane tab="BBC" key="2" forceRender>
         <BBC />
       </TabPane>
-      <TabPane tab="CNN" key="3">
+      <TabPane tab="CNN" key="3" forceRender>
         <CNN />
       </TabPane>
     </Tabs>
