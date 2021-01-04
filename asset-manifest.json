@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/newsql/static/css/main.603096c8.chunk.css",
+    "main.js": "/newsql/static/js/main.fe8e6c5d.chunk.js",
+    "main.js.map": "/newsql/static/js/main.fe8e6c5d.chunk.js.map",
+    "runtime-main.js": "/newsql/static/js/runtime-main.a5a44b87.js",
+    "runtime-main.js.map": "/newsql/static/js/runtime-main.a5a44b87.js.map",
+    "static/css/2.4d98ed14.chunk.css": "/newsql/static/css/2.4d98ed14.chunk.css",
+    "static/js/2.8d00d7c8.chunk.js": "/newsql/static/js/2.8d00d7c8.chunk.js",
+    "static/js/2.8d00d7c8.chunk.js.map": "/newsql/static/js/2.8d00d7c8.chunk.js.map",
+    "static/js/3.87c8c871.chunk.js": "/newsql/static/js/3.87c8c871.chunk.js",
+    "static/js/3.87c8c871.chunk.js.map": "/newsql/static/js/3.87c8c871.chunk.js.map",
+    "index.html": "/newsql/index.html",
+    "static/css/2.4d98ed14.chunk.css.map": "/newsql/static/css/2.4d98ed14.chunk.css.map",
+    "static/css/main.603096c8.chunk.css.map": "/newsql/static/css/main.603096c8.chunk.css.map",
+    "static/js/2.8d00d7c8.chunk.js.LICENSE.txt": "/newsql/static/js/2.8d00d7c8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5a44b87.js",
+    "static/css/2.4d98ed14.chunk.css",
+    "static/js/2.8d00d7c8.chunk.js",
+    "static/css/main.603096c8.chunk.css",
+    "static/js/main.fe8e6c5d.chunk.js"
+  ]
+}
